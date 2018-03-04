@@ -1,0 +1,9 @@
+$background: "masthead-background.jpg";
+
+%fixed-background {
+  // Possible break in future since no baseurl
+  background-image: url("/images/#{$background}"); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
