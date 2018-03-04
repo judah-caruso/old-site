@@ -311,6 +311,30 @@ nav {
   // }
 }
 
+.pagination {
+    margin: auto;
+    text-align: center;
+    color: $black;
+    a {
+      color: $nuDarkGrey;
+    }
+}
+
+.fofd {
+  @extend %fixed-background;
+* {
+    color: $nuWhite;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+serif {
+  font-family: $georgia;
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;

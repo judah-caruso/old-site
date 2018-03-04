@@ -4,4 +4,4 @@ title: Projects
 permalink: /projects/
 ---
 
-Hello!
+Hello! You're not supposed to be here...

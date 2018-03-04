@@ -7,7 +7,7 @@ layout: default
     <article class="post">
       
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
- 		<h4 class="date">{{ post.date | date: "%B %e, %Y" }} <span class="mood">{% if post.mood %} {{ %post.mood }} {% endif %}</span></h4>
+ 		<h4 class="date">{{ post.date | date: "%B %e, %Y" }} <span class="mood">{% if post.mood %} {{  post.mood }} {% endif %}</span></h4>
 
       <div class="entry">
         {{ post.excerpt }}
@@ -17,4 +17,14 @@ layout: default
 
     </article>
   {% endfor %}
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">&laquo;</a> {% else %}
+    <span class="previous">&laquo;</span> {% endif %}
+    <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">&raquo;</a> {% else %}
+    <span class="next ">&raquo;</span> {% endif %}
 </div>
