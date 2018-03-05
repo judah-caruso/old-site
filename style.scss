@@ -222,7 +222,7 @@ img {
   margin: -5px 0 0 0;
   color: $nuDarkGrey;
   font-size: 16px;
-
+  // font-weight: 100;
   @include mobile {
     margin: 3px 0;
   }
