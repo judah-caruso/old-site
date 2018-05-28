@@ -76,7 +76,7 @@ a {
   color: $nuBlack;
   text-decoration: none;
 	cursor: pointer;
-  transition: $ms;
+  // transition: $ms;
   &:hover, &:active {
     // color: $nuOffWhite;
     // transition: $ms;
@@ -85,7 +85,7 @@ a {
 
 .post a, .page a {
   &:hover {
-    color: $nuOffBlack;
+    opacity: 0.85;
   }
 }
 
@@ -167,16 +167,24 @@ img {
 .wrapper-masthead {
   margin-bottom: 50px;
   // background-image: url({{ site.baseurl }}/images/masthead-background.jpg);
+  background-position-y: -360px;
   @extend %fixed-background;
+
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 2.5rem 0;
   // border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
   }
+}
+
+.wrapper-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
 }
 
 .site-avatar {
@@ -220,11 +228,18 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $nuDarkGrey;
+  color: $nuWhite;
+  opacity: 0.5;
   font-size: 16px;
   // font-weight: 100;
   @include mobile {
     margin: 3px 0;
+  }
+}
+
+nav, footer  {
+    a:hover {
+    opacity: 0.8;
   }
 }
 
@@ -247,7 +262,6 @@ nav {
     text-align: right;
     font-weight: 100;
     letter-spacing: 1px;
-
     @include mobile {
       margin: 0 10px;
       color: $nuWhite;
