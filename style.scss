@@ -83,6 +83,10 @@ a {
   }
 }
 
+.overflowtext {
+    word-break: break-word;
+}
+
 .post a, .page a {
   &:hover {
     opacity: 0.85;
