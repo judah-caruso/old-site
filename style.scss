@@ -224,7 +224,26 @@ img {
   letter-spacing: 1px;
 }
 
+.footnote {
+    font-size: 14px;
+    vertical-align: super;
+    color: $nuRed;
+    &:before {
+        content: "[";
+    }
+    &:after {
+        content: "]";
+    }
+}
 
+.qrcode {
+      -ms-interpolation-mode: nearest-neighbor; // IE 7+ (non-standard property)
+      image-rendering: -moz-crisp-edges; // Firefox 3.6+
+      image-rendering: pixelated; // Chrome 41+ and Opera 26+
+    width: 220px;
+    height: 220px;
+    padding: 0;
+}
 
 .site-description {
   margin: -5px 0 0 0;
@@ -273,8 +292,14 @@ nav {
 // .main
 //
 
+.posts {
+    @include mobile {
+        margin: 8px;
+    }
+}
+
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 .posts > .post:last-child {
@@ -293,12 +318,13 @@ nav {
   }
 
   h1 {
-    text-transform: uppercase;
+      font-size: 20px;
+    //text-transform: uppercase;
     // border-bottom: 1px solid $lightGray;
   }
 
   .date {
-        background-color: rgba(39, 39, 52, 0.03);
+        //background-color: rgba(39, 39, 52, 0.03);
     border-radius: $radius;
   }
 
@@ -354,6 +380,8 @@ serif {
 }
 
 .wrapper-footer {
+  bottom: 0;
+  width: 100%;
   margin-top: 50px;
   border-top: 1px solid #ddd;
   // border-bottom: 1px solid #ddd;

@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Hey!
+title: Is this thing on?
 mood: introduction
+permalink: /000/
+type: post
 ---
 
 Wow, this thing actually works! Needless to say getting this set up wasn't the funnest thing I've ever done, but it's done so I can't complain.
@@ -18,4 +20,3 @@ Alright, I have to get back to fixing the most annoying DNS issues (I know, righ
 
 Thanks for taking the time out of your day/night to read this, and I'll "see" you all next time!
 
--- Judah

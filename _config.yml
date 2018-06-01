@@ -6,7 +6,7 @@
 name: Judah Caruso Rodriguez
 
 # Short bio or description (displayed in the header)
-description: a programming/personal blog
+description: A place where I post things
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/avatar2018.png
@@ -22,7 +22,7 @@ paginate_path: "/page/:num/"
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: k@0px.moe
   facebook:
   flickr:
   github: kyoto-shift
@@ -30,9 +30,9 @@ footer-links:
   linkedin:
   pinterest:
   rss:
-  twitter: kyotoshift
+  twitter: 0pixels 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  soundcloud: madebyk
+  soundcloud: 
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 

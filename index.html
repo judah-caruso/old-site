@@ -4,21 +4,25 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+    {% if post.type == "post" %}
     <article class="post">
       
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
- 		<h4 class="date">{{ post.date | date: "%B %e, %Y" }} {% if post.mood %}<span class="mood"> {{  post.mood }} </span>{% endif %}</h4>
-
+ 		<h4 class="date">{{ post.date | date: "%B %e, %Y" }}</h4>
+<!--
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-
+-->
     </article>
+    {% endif %} 
   {% endfor %}
 </div>
 
+
+{% if next_page != nil %}
 <!-- Pagination links -->
 <div class="pagination">
     {% if paginator.previous_page %}
@@ -28,3 +32,5 @@ layout: default
     <a href="{{ paginator.next_page_path }}" class="next">&raquo;</a> {% else %}
     <span class="next ">&raquo;</span> {% endif %}
 </div>
+{% endif %}
+
