@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Is this thing on?
-mood: introduction
-permalink: /000/
+category: blog
+permalink: /000
 type: post
 ---
 

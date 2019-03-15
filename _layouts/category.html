@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article class="page">
+    <h1>Category - <span style="text-transform: capitalize;">{{ page.category }}</span></h1>
+    <hr>
+    <div class="posts">
+      {% for post in site.categories[page.category] %}
+        {% if post.type == "post" %}
+          <article class="post">
+            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+              <h4 class="date">{{ post.date | date: "%B %e, %Y" }}</h4>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+</article>
