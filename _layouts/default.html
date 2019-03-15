@@ -14,47 +14,49 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-        <div class="background-overlay">
-        <div class="wrapper-overlay">
-        <div class="container">
-          <header class="masthead clearfix">
-          <!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
-
-            <div class="site-info">
-              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-              <p class="site-description">{{ site.description }}</p>
-            </div>
-
-            <nav>
-              <a href="{{ site.baseurl }}/">posts</a>
-              <a href="{{ site.baseurl }}/info">info</a>
-              <!-- <a href="{{ site.baseurl }}/projects">projects</a> -->
-            </nav>
-          </header>
-        </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content|pants }} 
-    </div>
-
-    {% if page.url == "/info/" %}
-
-    {% else %}
-    <div class="wrapper-footer">
-        <div class="background-overlay">
+    <div id="wrapper">
+      <div class="wrapper-masthead">
+          <div class="background-overlay">
+          <div class="wrapper-overlay">
           <div class="container">
-            <footer class="footer">
-              {% include svg-icons.html %}
-            </footer>
+            <header class="masthead clearfix">
+            <!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
+
+              <div class="site-info">
+                <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                <p class="site-description">{{ site.description }}</p>
+              </div>
+
+              <nav>
+                <a href="{{ site.baseurl }}/">posts</a>
+                <a href="{{ site.baseurl }}/info">info</a>
+                <!-- <a href="{{ site.baseurl }}/projects">projects</a> -->
+              </nav>
+            </header>
+          </div>
           </div>
         </div>
-    </div>
-    {% endif %}
+      </div>
 
-    {% include analytics.html %}
+      <div id="main" role="main" class="container">
+        {{ content|pants }}
+      </div>
+
+      {% if page.url == "/info/" %}
+
+      {% else %}
+      <div class="wrapper-footer">
+          <div class="background-overlay">
+            <div class="container">
+              <footer class="footer">
+                {% include svg-icons.html %}
+              </footer>
+            </div>
+          </div>
+      </div>
+      {% endif %}
+
+      {% include analytics.html %}
+    </div>
   </body>
 </html>

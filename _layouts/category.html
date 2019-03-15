@@ -3,8 +3,8 @@ layout: default
 ---
 
 <article class="page">
-    <h1>Category - <span style="text-transform: capitalize;">{{ page.category }}</span></h1>
-    <hr>
+    <span class="area-title">Category - <span style="text-transform: capitalize;">{{ page.category }}</span></span>
+    <hr />
     <div class="posts">
       {% for post in site.categories[page.category] %}
         {% if post.type == "post" %}
