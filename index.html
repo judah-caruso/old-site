@@ -2,13 +2,30 @@
 layout: default
 ---
 
-<div class="posts">
+<div class="posts pinned-posts">
+  <span class="area-title">Pinned Posts</span>
+  <hr />
   {% for post in site.posts %}
-    {% if post.type == "post" %}
-    <article class="post">
-      
+    {% if post.type == "post" and post.pinned == true %}
+    <article class="post pinned">
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
- 		<h4 class="date">{{ post.date | date: "%B %e, %Y" }}</h4>
+ 		  <h4 class="date">{{ post.date | date: "%B %e, %Y" }} | <a href="/category/{{ post.category }}">{{ post.category }}</a></h4>
+      <div class="entry preview">{{ post.excerpt | truncate: 280 }}</div>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class="posts">
+  <span class="area-title">Recent Posts</span>
+  <hr />
+  {% for post in site.posts %}
+    {% if post.type == "post" and post.pinned == false %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+ 		<h4 class="date">{{ post.date | date: "%B %e, %Y" }} | <a href="/category/{{ post.category }}">{{ post.category }}</a></h4>
 <!--
       <div class="entry">
         {{ post.excerpt }}
@@ -17,7 +34,7 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
 -->
     </article>
-    {% endif %} 
+    {% endif %}
   {% endfor %}
 </div>
 
@@ -33,4 +50,3 @@ layout: default
     <span class="next ">&raquo;</span> {% endif %}
 </div>
 {% endif %}
-

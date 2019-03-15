@@ -3,16 +3,16 @@
 #
 
 # Name of your site (displayed in the header)
-name: Judah Caruso Rodriguez
+name: Judah Caruso
 
 # Short bio or description (displayed in the header)
-description: A place where I post things
+description: A place where I post things (sometimes)
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/avatar2018.png
 
 # Pagination
-paginate: 5
+paginate: 8
 paginate_path: "/page/:num/"
 
 #
@@ -30,9 +30,9 @@ footer-links:
   linkedin:
   pinterest:
   rss:
-  twitter: 0pixels 
+  twitter: judahcaruso
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  soundcloud: 
+  soundcloud:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
@@ -62,6 +62,28 @@ permalink: /:title/
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
+
+collections:
+  category:
+    output: true
+    pinned: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: category
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      pinned: false
+      layout: post
+      category: blog
+      type: draft
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
