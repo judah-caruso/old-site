@@ -13,6 +13,11 @@
 $main_font: $serif;
 $alt_font: $sans;
 
+// Comment button fix
+.jcSendCommentButton {
+  outline: none !important;
+}
+
 // Background variables
 
 /**************/

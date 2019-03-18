@@ -2,7 +2,7 @@
     {% if include.url %}
     <a href="{{ include.url }}" title="{{ include.title }}" target="_blank">
     {% endif %}
-        <img src="{{ site.url }}/{{ include.img }}" {% if include.size %} style="width: {{ include.size}}%" {% endif %} alt="{{ include.title }}"/>
+        <img src="{{ site.url }}/{{ include.img }}" {% if include.size %} style="width: {{ include.size }}" {% endif %} alt="{{ include.title }}"/>
     {% if include.url %}
     </a>
     {% endif %}
