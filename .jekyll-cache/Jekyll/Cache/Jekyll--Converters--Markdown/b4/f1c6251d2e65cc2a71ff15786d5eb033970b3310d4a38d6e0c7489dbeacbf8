@@ -1,0 +1,43 @@
+I"�<p>Gridicarus is now stable at <code class="highlighter-rouge">0.1.5</code>! This is the <em>final</em> “initial commit” for Gridicarus. I’ve gotten the documentation to a point where I’m happy with the framework, the <code class="highlighter-rouge">package.json</code> file is squared away, and I think it’s generally smooth sailing from here. Well, I use smooth sailing loosely… The stuff I wanna implement is not going to be fun.</p>
+
+<p>Anyways, I should probably introduce the framework a little bit since this is the first Development Log.</p>
+
+<h3 id="whats-gridicarus">What’s Gridicarus?</h3>
+
+<p>Gridicarus is a CSS framework based around CSS Grids. I designed it to make the already easy CSS Grids even easier. And I think I’ve done a decent job so far. It does sacrifice <em>(for now)</em> some of the functionality of the CSS Grid spec. However, you can quickly develop nice, grid-based websites without even touching CSS! Pretty cool, eh?</p>
+
+<p>However, like any early project, it doesn’t come without its pitfalls. For example, it’s difficult to create vertical-grid-centric sites since the markup is so focused around horizontal-grid-centricity(?). This is because I only thought of horizontal grid designs while writing the prototype. Not vertical. I found out why this wasn’t a good design choice once I started writing the documentation. Needless to say I rewrote a small amount of SCSS…</p>
+
+<h3 id="current-plans--the-future">Current Plans + The Future</h3>
+
+<p>The current plans for Gridicarus are to get the framework to a point where you can mix and match grid layouts using predefined templates.</p>
+
+<p>For example, <code class="highlighter-rouge">.template1</code> could be something like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s1">"header   header   header"</span>   
+<span class="s1">"sidebar  content  content"</span>  
+<span class="s1">"footer   footer   footer"</span>
+</code></pre></div></div>
+
+<p>Then <code class="highlighter-rouge">.template-2</code> could replace one of the content areas for a second sidebar or remove the sidebar completely. My goal is to make Gridicarus a really quick grid templating framework. One where you can quickly swap out layouts to test new site designs, or even prototype new designs using the premade classes. I want to do this using only CSS, and only CSS Grids.</p>
+
+<h3 id="whats-happening-now">What’s happening now</h3>
+
+<p>As of now, I’m currently adding QOL features. More columns and rows, higher children count, better class naming, etc. Some of which I’ve already done in <code class="highlighter-rouge">0.2.0</code>. You can download it using the CDN link:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;link rel="stylesheet" href="https://unpkg.com/gridicarus@0.2.0/dist/gridicarus.min.css"&gt;
+</code></pre></div></div>
+
+<p>or NPM:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install gridicarus
+</code></pre></div></div>
+
+<p>Note that there is no documentation for <code class="highlighter-rouge">0.2.0</code> yet, so you’ll have to make do reading the actual Gridicarus file. There’s also legacy support, so if you <em>(surprisingly)</em> have a Gridicarus project using <code class="highlighter-rouge">0.1.5</code>, you can still use those features and naming conventions, while also using the new and improved ones.</p>
+
+<h3 id="closing">Closing</h3>
+
+<p>Hopefully this was a decent enough DevLog. I don’t really ever write these, so if I’m lacking information or something doesn’t seem clear, let me know!</p>
+
+<p>Anyways, thanks for reading and I’ll talk to you all sometime soon!</p>
+:ET

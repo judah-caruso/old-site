@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>0x6a75646168</title>
+    <description>A digital ronin who writes occasionally</description>
+    <link></link>
+    <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>New year, new site</title>
+        
+        
+          <description>&lt;p&gt;Oh jeez, what a &lt;em&gt;great&lt;/em&gt; year it has been so far. I won’t remind you as to not
+ruin the “vibe” of this post, however, let’s hope things improve/become stable.
+If you’re one of the 22,000 readers of this “blog,” you may have noticed the design has changed… again.
+“Why is that?” you might ask. Well, it started with me noticing that I had an
+abundance of repositories on &lt;a href=&quot;https://github.com/kyoto-shift&quot;&gt;GitHub&lt;/a&gt;. 83 to be exact.
+Granted most of these were private, sandbox repositories, so it’s not as though
+I’m a &lt;em&gt;pioneer&lt;/em&gt;, creating “amazing” and “revolutionary” bits of software for the free world.
+Honestly, I’ve treated GitHub as a sort of playground where I shitpost various
+bits of code that I’ve most likely moved from my Thinkpad to my neglected WSL instance, or my
+current—and probably doomed—Manjaro install (let’s hope this one lasts more than two weeks).&lt;/p&gt;
+
+&lt;p&gt;The kicker of this realization is that some of these repositories weren’t
+actually mine. Which makes sense, right? Pull requests, issues, tickets, all of the
+usual byproducts around contributing to open source software. However, it
+occurred to me that I hadn’t contributed to most, if &lt;strong&gt;any&lt;/strong&gt;, of these projects.
+That’s right, these forks were sitting on my account collecting digital dust due
+to my horrible maid and open source contributer skills.
+From the old, “1000+ commits ahead” JavaScript libraries to
+the many underutilized webpack + babbel + dabble + gabble.io boilerplate starter projects,
+my profile looked like the offramp of an old highway, littered with sadness and tiny shoes.
+The funniest part was that I don’t actually write JavaScript.
+It’s not my cup of tea, it doesn’t resonate with me, it doesn’t tickle my fancy,
+it doesn’t… not get my goat(?) If you couldn’t tell, I’m not a fan. I know this
+sound hypocritical coming from a guy who’s claims to fame were JavaScript-based projects.
+Please don’t make fun of me on IRC using your 68%, farm-to-pcb key switch keyboard, slapping away at the 
+various tmux and or i3 hotkeys you’ve graced your headless arch installation with.
+I really hope you can forgive me on Twitter using your emacs-embedded web browser.&lt;/p&gt;
+
+&lt;p&gt;Anyways, as I haven’t done any JavaScript development in many moons, I got to cleaning! Delete, confirm, archive, confirm.
+My &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL+C&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;CTRL+V&lt;/code&gt; keys were worn like the armor of a Spartan after a long day’s battle. And finally, after wiping the various
+fluids that &lt;strong&gt;my&lt;/strong&gt; 68% keyboard accrued over the 20+ minute duel, &lt;a href=&quot;https://youtu.be/kdXMdvhsvi0?t=48&quot;&gt;the peasants rejoiced&lt;/a&gt;.
+No longer was I plagued by outdated libraries that I had no intention of contributing to in the first place.
+No longer will I shudder while looking for that “stupid ass, poorly named” library that
+is only three, nondescript letters long. My GitHub repository list is now at peace
+and can rest for the time being. But there was a looming question, &lt;strong&gt;how did I get so many repositories in the first place?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I feel that—with the “socialization” of open source software—I treated that innocent “fork” button
+as a pseudo “super like” button. See something I like? FORK. Oh, do I want to save this for later? FORK.
+Sure this could be dismissed as a naive user’s misuse of a version-control platform, however, I don’t think I’m the only one with this problem. I went through my followers/following on GitHub
+and looked through each forked repository on their account. I recommend you do the same as filtering by forks makes
+this very easy. To my surprise their repository list looked almost identical to mine. “300+ commits behind,” “0 commits ahead,” “last commit: 8 months ago,” I digress.
+So why is there an overindulgence in the forking of repositories on GitHub? I think, and could very well be wrong, that many of us use the fork button as
+a “save for later” button instead. This could be due to many factors, but in my case it’s because I:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Want to keep a copy of the repository for my own personal use/preservation;&lt;/li&gt;
+  &lt;li&gt;Plan on actually contributing;&lt;/li&gt;
+  &lt;li&gt;Am afraid that the repository might disappear in the future.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sure these reasons are okay on the surface, but these reasons are also—in my case again—a little disingenuous.
+For example, one of the repositories I had on my &lt;strong&gt;&lt;em&gt;kill list&lt;/em&gt;&lt;/strong&gt; was a JavaScript library that converted vertical scrolling
+to horizontal. It was a very small library that I used in a project that never saw the light of day.
+The only open issues were minor questions and documentation requests, all many years old. The last commit was around the same age.
+My point is that the repository wasn’t worth a fork. Not that it wasn’t good, it did exactly what it said it would. But something to
+keep for “personal preservation?” Yeah, I’m not so sure. Sure, maybe I was going to contribute to the &amp;lt;250 SLOC JavaScript library, maybe.&lt;/p&gt;
+
+&lt;p&gt;However, I think my inner data hording demon came out in full force when I forked that repository many years ago.
+You see, I used to love having gigabytes of PDFs I knew I would never read, or tons of bookmarks
+to articles I would “totally look at later.” I think we’re all like that to a certain extent.
+We all like having the things we need, when we need them; especially developers.
+No one wants to need that really awesome “stb_image.h,” only to find out the last mirror of it got deleted during the A.I singularity. 
+But that’s not what the fork button is for, it’s meant for pull requests and issues and testing and the magical friendship gained through open source software.
+&lt;strong&gt;If&lt;/strong&gt; you wanted to save this code for future you’s possible dire strait, you could use the beautifully simple “Download ZIP” button.
+No muss, no fuss. Only the bliss of a perfect copy, converted to a format worthy of storing. I mean sure, that’s great and all, but then future you has to &lt;strong&gt;UNZIP A FILE&lt;/strong&gt;. Oh no, anything but that!
+What if ApocalypticArch doesn’t ship with &lt;code class=&quot;highlighter-rouge&quot;&gt;tar&lt;/code&gt; because Richard Stallman’s GNU + A.I created malware that deleted it and any other file utility from every system known to man?! What then?!
+Well then I guess you and your 952 repositories on GitHub can laugh at the robot overlords and their failed attempt to remove open source software from the internet.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;All jokes aside I’ve now started to change my habits around forking and cloning things on GitHub. In fact, I’ve even moved most of my
+“important” projects to &lt;a href=&quot;https://sourcehut.org/&quot;&gt;Sourcehut&lt;/a&gt; as I like the idea behind it and the fact that they have first-class support for Mercurial.
+But man, even though I’m tidying up my account and moving away from the platform… nothing felt greater
+than watching that little chocolate bar thingy, knowing I had a completely separate copy on my account, untouched by the patches and commits of an angry BDFL.&lt;/p&gt;
+
+&lt;p&gt;So anyways that’s why my blog/site looks different now. Hope you’re having a great day.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sun, 02 Feb 2020 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/posts/new-year-new-site/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/new-year-new-site/</guid>
+      </item>
+    
+      <item>
+        <title>Gridicarus: Development Update #2</title>
+        
+        
+          <description>&lt;p&gt;Gridicarus is back and cleaner than ever! It’s been about a year since the last patch,
+mostly because &lt;em&gt;(I thought)&lt;/em&gt; I liked how the project ended up and also couldn’t be bothered to update the dependencies.
+However! One of the projects I’m working on could use Gridicarus’ help, so I decided to update it… and what I found was shocking! If you don’t care about the changes and just want to know what I’m talking about, &lt;a href=&quot;https://0px.moe/gridicarus/&quot;&gt;click here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        
+        <pubDate>Wed, 27 Mar 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/posts/gridicarus-dev-update/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/gridicarus-dev-update/</guid>
+      </item>
+    
+      <item>
+        <title>Tiny site update + plans for the future</title>
+        
+        
+          <description>&lt;p&gt;&lt;strong&gt;여러분 안녕하세요! 오랜만이에요&lt;/strong&gt; –
+Hey everyone, it’s been a while! If you’re an avid reader of my &lt;em&gt;incredibly&lt;/em&gt; active blog,
+you might’ve noticed that there’s a few things going on. First off, the footer
+is actually at the bottom of the website now. Incredible web design skill, I know.
+Second, pinned posts! These will mostly be updates, but if I write an article
+or something I’m proud of (in the near future maybe?), I’ll probably pin it.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 14 Mar 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/posts/tiny-update/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/tiny-update/</guid>
+      </item>
+    
+      <item>
+        <title>Sample Search is still alive!</title>
+        
+        
+          <description>&lt;p&gt;If you came here because you were looking for &lt;a href=&quot;https://0px.moe/samplesearch/&quot;&gt;sample search&lt;/a&gt;, don’t worry, it’s still alive. I just forgot to renew the domain name. Mostly because &lt;em&gt;sampled.pro&lt;/em&gt; wasn’t a very good name, and because it’s surprisingly expensive to renew .pro domains. Who would’ve thought a $0.99 domain name would cost $15 to renew?&lt;br /&gt;
+In other news for sample search, it getting new features is kind of up in the air. I feel that it’s in a pretty good spot in terms of &lt;strong&gt;what it is&lt;/strong&gt; and &lt;strong&gt;what it does&lt;/strong&gt;. I wouldn’t want to over engineer and take away from the site as a whole. I think the most I’ll be doing is removing the ad bar from the site since I no longer have to pay for a domain name and I only made about… $0.13 for the &lt;em&gt;entire year of 2018&lt;/em&gt;.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 14 Mar 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/004</link>
+        <guid isPermaLink="true">http://localhost:4000/004</guid>
+      </item>
+    
+      <item>
+        <title>A quick update!</title>
+        
+        
+          <description>&lt;p&gt;Wow! It’s been around 2 (almost 3) months since I last posted here. This has
+mostly been two-parts busyness and one-part life. However, I’ll be more active
+very soon, and will be covering more interesting topics, as well as giving
+updates to the projects I’m actively working on.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 31 May 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/posts/a-quick-update/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/a-quick-update/</guid>
+      </item>
+    
+      <item>
+        <title>Gridicarus: Development Update #1</title>
+        
+        
+          <description>&lt;p&gt;Gridicarus is now stable at &lt;code class=&quot;highlighter-rouge&quot;&gt;0.1.5&lt;/code&gt;! This is the &lt;em&gt;final&lt;/em&gt; “initial commit” for Gridicarus. I’ve gotten the documentation to a point where I’m happy with the framework, the &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; file is squared away, and I think it’s generally smooth sailing from here. Well, I use smooth sailing loosely… The stuff I wanna implement is not going to be fun.&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 20 Mar 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/posts/gridicarus-dev-update/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/gridicarus-dev-update/</guid>
+      </item>
+    
+      <item>
+        <title>Is this thing on?</title>
+        
+        
+          <description>&lt;p&gt;Wow, this thing actually works! Needless to say getting this set up wasn’t the most fun thing I’ve ever done, but it’s done so I can’t complain. Anyways, welcome to the site! I intend to post a lot on here. From development updates for things I work on to music production tutorials and everything in-between. Maybe even some web design, who knows?!&lt;/p&gt;
+</description>
+        
+        <pubDate>Mon, 05 Feb 2018 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/posts/welcome/</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/welcome/</guid>
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,17 @@
+---
+layout: default
+archive: false
+---
+
+<article class="list">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <span class="list-headline">{{ site.description }}</span>
+    </header>
+    <section id="post-body">
+        {{content}}
+    </section>
+</article>
+
+<!-- Footer -->
+{% include footer.html %}

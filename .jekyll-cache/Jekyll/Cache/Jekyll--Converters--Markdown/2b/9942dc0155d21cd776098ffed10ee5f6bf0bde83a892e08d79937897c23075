@@ -1,0 +1,72 @@
+I"�<p>Gridicarus is back and cleaner than ever! It’s been about a year since the last patch,
+mostly because <em>(I thought)</em> I liked how the project ended up and also couldn’t be bothered to update the dependencies.
+However! One of the projects I’m working on could use Gridicarus’ help, so I decided to update it… and what I found was shocking! If you don’t care about the changes and just want to know what I’m talking about, <a href="https://0px.moe/gridicarus/">click here</a>.</p>
+
+<h3 id="awkward-syntax">Awkward syntax</h3>
+
+<p>In the original version, to create a grid you’d use <code class="highlighter-rouge">grid-parent</code> on the main element, and <code class="highlighter-rouge">grid-child</code> on every child of said grid. This doesn’t make very much sense as everything inside <code class="highlighter-rouge">grid-parent</code> is automatically a child by semantics. That convention has been replaced by just using <code class="highlighter-rouge">parent</code> on the main element, and nothing on the children. Now the children only worry about their size and shape in the grid, rather than if they’re even a child!</p>
+
+<p>And that brings me to how children in the grid were shaped and arranged. Originally, I thought it would be cool to do some weird <code class="highlighter-rouge">grid-child #1</code> type syntax and really <em>stretch</em> the limits of HTML and CSS. This was dumb, made no sense semantically, and actually raised errors in the console <em>(can you tell I extensively tested this?)</em>. This has been replaced by a single <code class="highlighter-rouge">order-(1-16)</code> class which explains everything it needs to in one word and one number (and one dash).</p>
+
+<h3 id="inconsistency">Inconsistency</h3>
+
+<p>Gridicarus’ syntax is much more consistent now. Dashes are more prevalent in the framework now too. For example, in the original version, this is valid:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="grid-parent"&gt;
+
+  &lt;div class="grid-child #1 h-span2 box-lime"&gt;
+    Header
+  &lt;/div&gt;
+  &lt;div class="grid-child #2 h-span2 box-blue"&gt;
+    Body
+  &lt;/div&gt;
+  &lt;div class="grid-child4 box-grey"&gt;
+    Footer Left
+  &lt;/div&gt;
+  &lt;div class="grid-child4 box-silver"&gt;
+    Footer Right
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>Sure <em>this</em> is “consistent,” but it’s ugly. <em>Why are there dashes between everything</em> <strong><em>but</em></strong> <em>numbers?</em> <em>Why do you have the option to use</em> <code class="highlighter-rouge">grid-child4</code> <em>and</em> <code class="highlighter-rouge">grid-child #4</code> <em>?</em> <em>Why do you get so many options in the first place? Isn’t that just confusing?</em>  All of these were questions I had for myself when reading through the source code and documentation again. And that brings me to one of the things I’ve been slowly discovering for myself:</p>
+
+<blockquote>
+  <p>Syntax shouldn’t try to accommodate multiple styles. It should accommodate one style incredibly well.</p>
+</blockquote>
+
+<p>I’m sure this quote has been said a million times by a million different people, but it’s now the mindset for Gridicarus. Anything legacy has been removed in favor of the new, better style.</p>
+
+<h3 id="responsivity-responsiveness">Responsivity(?) Responsiveness(?)</h3>
+
+<p>The original version featured nothing to help with responsive design. Goodbye chances of making anything for multiple platforms <em>(what’s mobile?)</em>. The newest version has a little bit to help in responsive design. Enough to make a website that looks good on desktop, and can transitions to mobile without any loss in functionality. I do plan on adding more things, such as proper templating, responsive resizing, etc. However, I’m faced with a bit of a dilemma. I can either,</p>
+
+<ul>
+  <li><strong>accommodate all types of responsivity</strong> (every breakpoint, every necessary change);
+    <ul>
+      <li>Bulkier—and possibly—more confusing framework, destroyer of <code class="highlighter-rouge">npm install</code>.</li>
+    </ul>
+  </li>
+  <li><strong>accommodate some types of responsivity</strong> (resize rows by x on tablet) <em>(current)</em>;
+    <ul>
+      <li>Regular-sized framework, a little bit of heaviness but nothing too crazy.</li>
+    </ul>
+  </li>
+  <li><strong>say “Hey, you got this one” and do nothing!</strong>
+    <ul>
+      <li>Super cool, totally minimal, Bauhaus-inspired, Ikea framework</li>
+    </ul>
+  </li>
+</ul>
+
+<p>I haven’t fully committed to any of them, yet. I’d prefer the framework to be lightweight, almost like a blank canvas for you to add onto. But at the same time, I want it to have enough features so that it’s even worth using. I mean, what’s the point of using a framework you can easily write yourself in 10 minutes? This is something I need to think about more.</p>
+
+<h3 id="in-closing">In closing</h3>
+
+<p>My main goal for Gridicarus has been, and will always be for it to be a framework that allows people to use the awesomeness that is CSS Grids, easily. At this point, I’m actually happy with Gridicarus. Not happy enough to stop working on it, but happy enough to use it and not be like <em>“Wow this sucks, I’ll just use [insert other framework here].”</em> — If you’d like to check out the project, you can do that <a href="https://0px.moe/gridicarus/">here</a>.</p>
+
+<p>Thank you for reading through my rant and revival of a year old project.</p>
+
+<p>Stay well,<br />
+– Judah</p>
+:ET

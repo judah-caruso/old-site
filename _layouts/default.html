@@ -1,62 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% include meta.html %}
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.blogName }}</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/highlight.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.blogName }}" href="/blog/feed.xml">
+</head>
+<body>
+    <section id="wrapper" class="{% if page.profile %}home{% endif %}">
+        {% include navigation.html %}
+        {% include profile.html %}
+        {% if page.url == '/' %}
+            {% include pinned.html %}
+        {% endif %}
+        {{ content }}
+    </section>
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-  </head>
-
-  <body>
-    <div id="wrapper">
-      <div class="wrapper-masthead">
-          <div class="background-overlay">
-          <div class="wrapper-overlay">
-          <div class="container">
-            <header class="masthead clearfix">
-            <!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
-
-              <div class="site-info">
-                <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                <p class="site-description">{{ site.description }}</p>
-              </div>
-
-              <nav>
-                <a href="{{ site.baseurl }}/">posts</a>
-                <a href="{{ site.baseurl }}/info">info</a>
-                <!-- <a href="{{ site.baseurl }}/projects">projects</a> -->
-              </nav>
-            </header>
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="main" role="main" class="container">
-        {{ content|pants }}
-      </div>
-
-      {% if page.url == "/info/" %}
-
-      {% else %}
-      <div class="wrapper-footer">
-          <div class="background-overlay">
-            <div class="container">
-              <footer class="footer">
-                {% include svg-icons.html %}
-              </footer>
-            </div>
-          </div>
-      </div>
-      {% endif %}
-
-      {% include analytics.html %}
-    </div>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
 </html>
+
+
+
