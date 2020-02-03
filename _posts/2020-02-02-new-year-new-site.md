@@ -28,7 +28,7 @@ my profile looked like the offramp of an old highway, littered with sadness and 
 The funniest part was that I don't actually write JavaScript.
 It's not my cup of tea, it doesn't resonate with me, it doesn't tickle my fancy,
 it doesn't... not get my goat(?) If you couldn't tell, I'm not a fan. I know this
-sound hypocritical coming from a guy who's claims to fame were JavaScript-based projects.
+sounds hypocritical coming from a guy who's claims to fame were JavaScript-based projects.
 Please don't make fun of me on IRC using your 68%, farm-to-pcb key switch keyboard, slapping away at the 
 various tmux and or i3 hotkeys you've graced your headless arch installation with.
 I really hope you can forgive me on Twitter using your emacs-embedded web browser.
